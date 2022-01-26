@@ -1,0 +1,22 @@
+# 테스트 경로에의 resource 내 설정이 있으면 테스트시 해당 설정을 우선으로 바라본다.
+# 없을 경우 메인폴더에 있는 설정으로 테스트 실행
+# 스프링부트에서는 설정이 없을 경우 기본적으로 메모리 DB 로 실행된다.
+spring:
+#  datasource:
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernats:
+#        format-sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
